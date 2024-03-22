@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <h1>Weather Application</h1>
+    <form action="#" method="#">
+        <select class="country-choice">
+            <option value="">--- Select a Country ---</option>
+        </select> 
+        <input type="text" placeholder="Enter a city name"/>
+        <button class="btn-submit" type="submit">Get Forecast</button>
+    </form>
+    <div class="today-container">
+        <div class="today-card">
+            <div class="all-info">  
+                <div class="info-day"></div>
+                <div class="temp-desc">
+                    <div class="info-temperature"></div>
+                    <div class="info-description"></div>
+                </div>
+            </div>
+            <div class="img-of-today"></div>
+            <!-- <img src="" alt="" class="img-today"> -->
+        </div>
+    </div>
+    <div class="next-day-container">
+         <!-- <div class="next-day-card">
+            <img src="" alt="" class="img-next">
+            <div class="next-info"></div>
+        </div> -->
+    </div>
+</body>
+</html>

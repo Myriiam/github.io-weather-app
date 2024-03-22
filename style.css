@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: "Onest", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+body {
+    margin: 50px;
+    background: linear-gradient(70deg, #a2e8fd, #cceafa)
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 50px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.country-choice {
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+input {
+    width: 300px;
+    text-align: center;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+}
+
+button {
+    width: 150px;
+    height: 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #5899e2;
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+button:hover {
+    background-color: #5cb8ec;
+}
+
+select {
+    border: none;
+}
+
+.today-container {
+    height: 600px;
+    /* background-color: pink; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.today-card {
+  /*  background-color: rgb(120, 178, 120); */
+   height: 550px;
+   width: 600px;
+   border-radius: 25px;
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   display: none;
+}
+
+.info-day > p {
+    font-size: 40px;
+    font-weight: bolder;
+    margin-top: 40px;
+    margin-left: 15px;
+}
+
+.info-temperature > p {
+    font-size: 100px;
+    font-weight: bolder;
+}
+
+.info-description > p {
+    font-size: 20px;
+    font-weight: bolder;
+    margin-top: 70px;
+}
+
+.img-of-today {
+    /* width: 600px;
+    height: 300px; */
+   /*  background-color: rgb(172, 153, 191); */
+    object-fit: contain;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.all-info {
+    background-color: rgba(245, 245, 245, 0.582);
+    padding-left: 10px;
+    padding-left: 10px;
+    display: none;
+}
+
+.info-day {
+    width: 500px;
+    height: auto;
+    /* background-color: rgb(79, 236, 202); */
+   /*  transform: translateX(-100px); */
+}
+
+.temp-desc {
+    display: flex;
+}
+
+.info-temperature {
+    width: 600px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+   /*  background-color: rgb(243, 180, 240); */
+    /* transform: translateX(-100px); */
+}
+.info-description {
+    width: 300px;
+    height: 123px;
+   /*  background-color: rgb(10, 223, 56); */
+    /* transform: translateX(-100px); */
+    display: flex;
+    justify-content: center;
+}
+
+.next-day-container {
+    /* background-color: rgb(244, 191, 94); */
+    /* height: 350px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.next-day-card {
+    height: 280px;
+    width: 250px;
+    /* background-color: yellow;  */
+    background-color: #ffffff;
+    background-image: linear-gradient(315deg, #ffffff 0%, #5899e2 74%);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 25px;
+}
+
+.next-info {
+    margin: 15px;
+}
+.next-info > p:first-child {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.img-next-weather {
+   /*  background-color: blue; */
+    width: 250px;
+    height: 150px;
+    object-fit: contain;
+    border-radius: 25px;
+}
+
+.next-day-card:first-child {
+    display: none;
+}
+
+
+/******************** Media Queries ********************/
+@media screen and (max-width: 650px) {
+    .temp-desc {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-description {
+        height: auto;
+    }
+
+     .info-description > p{
+       margin: 0px 0px 10px 0px;
+    } 
+
+}
